@@ -1,0 +1,118 @@
+/* basic styles for the document */
+html {
+  font-size: 16px;
+  font-family: 'Open Sans Condensed', 'Titillium Web', Tahoma, Trebuchet, sans-serif;
+  background-color: #212121; /* BG color in case of BG image failure */
+  background-image: url(../images/footer_lodyas.png);
+}
+h2{ /* form compete notifications (titles) */
+  font-size: 4.5em;
+}
+h2, p{
+  margin: 0;
+}
+/* style for the header area */
+header{
+  width: 90%;
+  margin: 50px auto;
+  color: white;
+}
+header h1{ /* main title */
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0 0 0;
+}
+header p{
+  text-align: center;
+}
+h3{ /* form subheadings */
+  font-size: 1em;
+  margin: 0 0 10px 0;
+}
+/* error section styles */
+#errors{
+  display: none;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: .8em;
+}
+/* basic form width and placement */
+form#signup{
+  width: 40%;
+  margin: 50px auto 100px auto;
+}
+/* styling for the name prefix section */
+ul{
+  margin: 0;
+  padding-left: 45%;
+}
+li{
+  display: block; /* display top-down */
+  width: 32%;
+}
+li input{
+  margin-right: 5px;
+}
+/* generic text input field styling */
+div.text_input_field input, div.text_input_field select, textarea{
+  /* grey text box, white text */
+  color: white;
+  background-color: #212121;
+  font-size: .9em;
+}
+textarea{
+  min-width: 100%; /* set width */
+  max-width: 100%;
+  height: 100px;
+}
+div.text_input_field{ /* text fields */
+  text-align: center;
+  margin: 10px auto;
+}
+div.text_input_field label{ /* field labels */
+  display: inline-block;
+  text-align: right;
+  margin-right:5px;
+  width: 25%;
+}
+div.text_input_field input, div.text_input_field select{
+  display: inline-block;
+  width: 70%;
+}
+/* submit button */
+input[type="submit"]{
+  font-size: .8em;
+  margin-top: 15px;
+  padding: 20px;
+  width: 100%;
+  background-color: #212121;
+  color: white;
+  text-transform: uppercase;
+}
+/* text area delivery instruction section */
+#signup #instructions{
+  width: 100%;
+  height: 70px;
+}
+.boxStyle{ /* shared border/box style */
+  background-color: #ffffff;
+  box-shadow: -10px 12px 5px 0px rgba(0,0,0,0.3);
+  border: 1px solid black;
+}
+.hidden{ /* form complete message boxes */
+  width: 60%;
+  margin: 200px auto 250px auto;
+  text-align: center;
+  padding: 5px 10px 20px 10px;
+}
+#success{ /* regular submission message */
+  display: none;
+}
+#secretCode{ /* secret submission message */
+  display: none;
+}
+form{
+  padding: 20px;
+  margin: 20px;
+}
